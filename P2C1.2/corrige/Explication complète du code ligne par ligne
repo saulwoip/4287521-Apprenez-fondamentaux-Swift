@@ -1,0 +1,123 @@
+### 🔍 **Explication complète du code ligne par ligne**  
+
+
+var nuriture = 4.0
+var sellingMilk = 30 * 0.5
+
+for _ in 1...30 {
+    money += sellingMilk
+    money -= nuriture
+}
+
+print(money)
+
+
+Voici une **explication détaillée** de **chaque ligne** du code, en expliquant **ce que Swift fait** et **ce que signifie chaque écriture**.
+
+---
+
+### ✅ **Code et explication ligne par ligne :**  
+
+```swift
+// Déclaration et initialisation d'une variable "money" avec une valeur initiale de 0.0
+var money = 0.0  
+```
+#### 🔎 **Explication :**  
+- **`var`** : Déclare une **variable modifiable**.  
+- **`money`** : Stocke l'argent disponible.  
+- **`= 0.0`** : Valeur initiale de **0.0** (un `Double`, nombre à virgule flottante).  
+- Swift **infère automatiquement** que `money` est un `Double`.  
+
+---
+
+```swift
+// Déclaration et initialisation d'une variable "nourriture" avec une valeur de 4.0
+var nourriture = 4.0  
+```
+#### 🔎 **Explication :**  
+- **`var`** : Variable modifiable.  
+- **`nourriture`** : Représente **le coût de la nourriture par jour**.  
+- **`= 4.0`** : Valeur de **4.0 unités monétaires** par jour.  
+- **Type inféré** : `Double`.  
+
+---
+
+```swift
+// Déclaration et initialisation d'une variable "sellingMilk"
+var sellingMilk = 30 * 0.5  
+```
+#### 🔎 **Explication :**  
+- **`sellingMilk`** : Stocke le revenu de la vente du lait par jour.  
+- **Calcul détaillé** :  
+  - `30` → Nombre de litres de lait vendus par jour.  
+  - `0.5` → Prix par litre de lait.  
+  - **Multiplication** : `30 * 0.5 = 15.0`.  
+- **Type inféré** : `Double` (car `0.5` est un `Double`).  
+
+---
+
+```swift
+// Début d'une boucle "for" qui s'exécute 30 fois
+for _ in 1...30 {  
+```
+#### 🔎 **Explication :**  
+- **Boucle `for`** : Répète **30 fois** le code à l’intérieur.  
+- **`1...30`** : Plage de nombres **allant de 1 à 30 inclus**.  
+- **Le `_` remplace une variable de boucle** car on **n’a pas besoin du numéro de l'itération**.  
+- **Chaque itération représente un jour**.  
+
+---
+
+```swift
+    // Ajout du revenu de la vente du lait à la variable "money"
+    money += sellingMilk  
+```
+#### 🔎 **Explication :**  
+- **Opérateur `+=`** : Équivaut à `money = money + sellingMilk`.  
+- **Ajoute `sellingMilk` (15.0) à `money` chaque jour**.  
+
+---
+
+```swift
+    // Soustraction du coût de la nourriture à la variable "money"
+    money -= nourriture  
+}
+```
+#### 🔎 **Explication :**  
+- **Opérateur `-=`** : Équivaut à `money = money - nourriture`.  
+- **Soustrait `nourriture` (4.0) de `money` chaque jour**.  
+- **Après 30 jours**, le montant final est calculé.  
+
+---
+
+```swift
+// Affichage du résultat final de "money" dans la console
+print(money)  
+```
+#### 🔎 **Explication :**  
+- **`print()`** affiche la valeur actuelle de `money` après 30 jours.  
+
+---
+
+### 🏆 **Résumé du fonctionnement général du code**
+1. **Déclaration des variables :**  
+   - `money = 0.0` → L'argent initial.  
+   - `nourriture = 4.0` → Coût journalier.  
+   - `sellingMilk = 30 * 0.5` → Revenus journaliers.  
+
+2. **Boucle `for` exécutée 30 fois :**  
+   - **Ajoute** `sellingMilk` (15.0) à `money`.  
+   - **Soustrait** `nourriture` (4.0) de `money`.  
+
+3. **Affichage du montant final après 30 jours.**  
+
+---
+
+### 🚀 **Ce que tu as appris avec cette explication**
+✔️ **Utilisation des variables (`var`) en Swift**  
+✔️ **Manipulation des nombres (`Double`)**  
+✔️ **Les opérateurs `+=` et `-=`**  
+✔️ **Les boucles `for` avec une plage de nombres**  
+✔️ **Utilisation de `print()` pour afficher un résultat**  
+
+Avec cette explication, **tu comprends totalement le fonctionnement du code !** 🎯🔥
