@@ -1,0 +1,99 @@
+### 🔍 **Explication complète du code ligne par ligne**  
+
+// Le prix du voyage aux Caraïbes de Joe
+var price = 1499
+
+// Le bénéfice quotidien de Joe avec sa ferme
+var dailyBenefit = 10
+
+// Le nombre de jours pendant lesquelles Joe doit économiser
+var result = price / dailyBenefit
+
+// Remplacer les X par les bonnes valeurs
+let message = "Cher Joe, il te faudra économiser pendant \(result) jours pour te payer ton voyage à \(price) €"
+
+
+Voici une **explication détaillée** de **chaque ligne** du code, en expliquant **ce que Swift fait** et **ce que signifie chaque écriture**.
+
+---
+
+### ✅ **Code et explication ligne par ligne :**  
+
+```swift
+// Le prix du voyage aux Caraïbes de Joe
+var price = 1499
+```
+#### 🔎 **Explication :**  
+- **`var`** : Mot-clé qui permet de déclarer une variable **modifiable**.  
+- **`price`** : Nom de la variable, qui représente **le prix du voyage**.  
+- **`= 1499`** : Affectation d’une valeur initiale (1499 euros).  
+- **Type inféré** : Swift reconnaît que `price` est un `Int` (entier).  
+
+---
+
+```swift
+// Le bénéfice quotidien de Joe avec sa ferme
+var dailyBenefit = 10
+```
+#### 🔎 **Explication :**  
+- **`var`** : Variable modifiable.  
+- **`dailyBenefit`** : Représente **le bénéfice que Joe gagne chaque jour** avec sa ferme.  
+- **`= 10`** : Il gagne **10 euros par jour**.  
+- **Type inféré** : Swift comprend que `dailyBenefit` est aussi un `Int`.  
+
+---
+
+```swift
+// Le nombre de jours pendant lesquelles Joe doit économiser
+var result = price / dailyBenefit
+```
+#### 🔎 **Explication :**  
+- **`result`** : Stocke **le nombre de jours nécessaires pour payer le voyage**.  
+- **Calcul** : `price / dailyBenefit`  
+  - `1499 / 10` → Swift effectue une **division entière** (`Int`).  
+  - Le résultat est **149** (car Swift utilise la division entière avec des `Int`).  
+- **Type inféré** : `result` est un `Int`.  
+
+---
+
+```swift
+// Remplacer les X par les bonnes valeurs
+let message = "Cher Joe, il te faudra économiser pendant \(result) jours pour te payer ton voyage à \(price) €"
+```
+#### 🔎 **Explication :**  
+- **`let`** : Mot-clé qui déclare une **constante** (valeur non modifiable).  
+- **`message`** : Variable de type `String`, stocke le message final.  
+- **Interpolation de chaîne (`\(result)`, `\(price)`)** :  
+  - `\(result)` est remplacé par la valeur de `result` (149).  
+  - `\(price)` est remplacé par `price` (1499).  
+- **Résultat final de `message`** :  
+  ```
+  "Cher Joe, il te faudra économiser pendant 149 jours pour te payer ton voyage à 1499 €"
+  ```
+
+---
+
+### 🏆 **Résumé du fonctionnement général du code**
+1. **Déclaration des variables :**  
+   - `price = 1499` → Prix du voyage.  
+   - `dailyBenefit = 10` → Bénéfice quotidien.  
+   - `result = price / dailyBenefit` → Nombre de jours pour économiser.  
+
+2. **Utilisation de l’interpolation de chaîne (`\(variable)`)**  
+   - Permet d’intégrer des valeurs calculées dans une `String`.  
+
+3. **Calcul automatique avec Swift**  
+   - `price / dailyBenefit` effectue une **division entière**.  
+
+4. **Affichage du message formaté**  
+   - `message` contient le texte final avec les valeurs remplacées.  
+
+---
+
+### 🚀 **Ce que tu as appris avec cette explication**
+✔️ **Déclarer des variables (`var`) et des constantes (`let`)**  
+✔️ **Effectuer des opérations mathématiques en Swift (`/`)**  
+✔️ **Les types numériques (`Int`) et la division entière**  
+✔️ **Utiliser l’interpolation de chaîne pour insérer des valeurs dans du texte**  
+
+Avec cette explication, **tu comprends parfaitement le fonctionnement du code !** 🎯🔥
